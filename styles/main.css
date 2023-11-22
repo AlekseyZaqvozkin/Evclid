@@ -1,0 +1,66 @@
+@import "normalaise.css";
+@import "fonts.css";
+@import "variables.css";
+
+@import "components/header.css";
+@import "components/hero.css";
+@import "components/about.css";
+@import "components/how.css";
+@import "components/header.css";
+@import "components/faq.css";
+@import "components/footer.css";
+
+
+
+body {
+  min-width: 320px;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--white);
+}
+
+.btn-fill {
+  width: fit-content;
+  color: var(--white);
+  background: var(--orange);
+  border-radius: 16px;
+  border: none;
+  transition: background-color 0.3s linear;
+}
+
+.btn-fill::after {
+  transition: backgraund-color 0.3s linear;
+}
+
+.btn-fill:focus,
+.btn-fill:hover {
+  background-color: var(--orange-hover);
+  outline: none;
+}
+
+.btn-fill:active {
+  background-color: var(--orange-active);
+}
+
+.flex {
+  display: flex;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+  color: var(--black);
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--black);
+}
+
+.container {
+  max-width: 1920px;
+  padding: 0 75px;
+  margin: 0 auto;
+}
